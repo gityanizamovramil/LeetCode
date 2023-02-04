@@ -3,8 +3,6 @@ package programmer.yanizamovramil.problems.solutions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 class TwoSumTest {
 
     //case 1
@@ -12,18 +10,16 @@ class TwoSumTest {
     //target = 9;
     @Test
     void twoSum_Case_1() {
+        //Given
         int[] nums = {2,7,11,15};
         int target = 9;
-
+        //When
         TwoSum twoSum = new TwoSum();
         int[] bruteForceSum = twoSum.bruteForce(nums, target);
-
-        Assertions.assertNotNull(bruteForceSum);
-        System.out.println(Arrays.toString(bruteForceSum));
-
         int[] optimizedByHashTableSum = twoSum.optimizedByHashTable(nums, target);
+        //Then
+        Assertions.assertNotNull(bruteForceSum);
         Assertions.assertNotNull(optimizedByHashTableSum);
-        System.out.println(Arrays.toString(optimizedByHashTableSum));
     }
 
     //case 2
@@ -31,18 +27,16 @@ class TwoSumTest {
     //target = 6;
     @Test
     void twoSum_Case_2() {
+        //Given
         int[] nums = {3,2,4};
         int target = 6;
-
+        //When
         TwoSum twoSum = new TwoSum();
         int[] bruteForceSum = twoSum.bruteForce(nums, target);
-
-        Assertions.assertNotNull(bruteForceSum);
-        System.out.println(Arrays.toString(bruteForceSum));
-
         int[] optimizedByHashTableSum = twoSum.optimizedByHashTable(nums, target);
+        //Then
+        Assertions.assertNotNull(bruteForceSum);
         Assertions.assertNotNull(optimizedByHashTableSum);
-        System.out.println(Arrays.toString(optimizedByHashTableSum));
     }
 
     //case 3
@@ -50,18 +44,16 @@ class TwoSumTest {
     //target = 6;
     @Test
     void twoSum_Case_3() {
+        //Given
         int[] nums = {3,3};
         int target = 6;
-
+        //When
         TwoSum twoSum = new TwoSum();
         int[] bruteForceSum = twoSum.bruteForce(nums, target);
-
-        Assertions.assertNotNull(bruteForceSum);
-        System.out.println(Arrays.toString(bruteForceSum));
-
         int[] optimizedByHashTableSum = twoSum.optimizedByHashTable(nums, target);
+        //Then
+        Assertions.assertNotNull(bruteForceSum);
         Assertions.assertNotNull(optimizedByHashTableSum);
-        System.out.println(Arrays.toString(optimizedByHashTableSum));
     }
 
     //case 4
@@ -69,19 +61,16 @@ class TwoSumTest {
     //target = 0;
     @Test
     void twoSum_Case_4() {
+        //Given
         int[] nums = {-3,4,3,90};
         int target = 0;
-
+        //When
         TwoSum twoSum = new TwoSum();
         int[] bruteForceSum = twoSum.bruteForce(nums, target);
-
-        Assertions.assertNotNull(bruteForceSum);
-        System.out.println(Arrays.toString(bruteForceSum));
-
         int[] optimizedByHashTableSum = twoSum.optimizedByHashTable(nums, target);
+        //Then
+        Assertions.assertNotNull(bruteForceSum);
         Assertions.assertNotNull(optimizedByHashTableSum);
-        System.out.println(Arrays.toString(optimizedByHashTableSum));
     }
-
 
 }
